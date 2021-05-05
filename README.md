@@ -8,7 +8,7 @@ Run `nodemon server` for a dev server. Navigate to `http://localhost:3000/`. The
 
 ## To test the app using heroku link on postman
 
-Create: `https://zuri-project.herokuapp.com/create`
+### Create: `https://zuri-project.herokuapp.com/create`
 
 #### Payload is 
 `{ "message" : "string here",
@@ -19,7 +19,7 @@ Create: `https://zuri-project.herokuapp.com/create`
 	    }
 }`
 
-## GET: `https://zuri-project.herokuapp.com/`
+### GET: `https://zuri-project.herokuapp.com/`
 
 Update: `https://zuri-project.herokuapp.com/update/_id`
 #### Payload is 
@@ -31,4 +31,4 @@ Update: `https://zuri-project.herokuapp.com/update/_id`
 	}
 }`
 
-## Delete: `https://zuri-project.herokuapp.com/delete/_id`
+### Delete: `https://zuri-project.herokuapp.com/delete/_id`
