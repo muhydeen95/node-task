@@ -18,7 +18,7 @@ mongoose
   .connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false })
 
 
-app.get('/users', (req, res) => {
+app.get('/', (req, res) => {
   Users.find()
     // .sort({ createdAt: -1 })
     .then((result) => {
