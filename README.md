@@ -11,23 +11,24 @@ Run `nodemon server` for a dev server. Navigate to `http://localhost:3000/`. The
 Create: `https://zuri-project.herokuapp.com/create`
 
 #### Payload is 
-```{ "message" : "string here",
-			 data":{ "name" : "string here",
-									"email" :"string here",
-									"country": "string here"
-			}
-}```
+`{ "message" : "string here",
+		data":{ 
+            "name" : "string here",
+			"email" :"string here",
+			"country": "string here"
+	    }
+}`
 
-GET: `https://zuri-project.herokuapp.com/`
+## GET: `https://zuri-project.herokuapp.com/`
 
 Update: `https://zuri-project.herokuapp.com/update/_id`
 #### Payload is 
-```{
+`{
 	data":{ 
         "name" : "string here",
 		"email" :"string here",
 		"country": "string here"
 	}
-}```
+}`
 
-Delete: `https://zuri-project.herokuapp.com/delete/_id`
+## Delete: `https://zuri-project.herokuapp.com/delete/_id`
