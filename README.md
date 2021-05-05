@@ -21,7 +21,7 @@ Run `nodemon server` for a dev server. Navigate to `http://localhost:3000/`. The
 
 ### GET: `https://zuri-project.herokuapp.com/`
 
-Update: `https://zuri-project.herokuapp.com/update/_id`
+### Update: `https://zuri-project.herokuapp.com/update/_id`
 #### Payload is 
 `{
 	data":{ 
