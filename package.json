@@ -2,13 +2,21 @@
   "name": "task",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
-    "serve": "node app.js"
+    "serve": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "node-fetch": "^2.6.1"
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-validation": "^3.0.8",
+    "mongoose": "^5.12.7",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
