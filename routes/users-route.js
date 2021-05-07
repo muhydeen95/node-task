@@ -6,7 +6,7 @@ const router = express.Router();
 router.get("/users", (req, res) => {
   Users.find()
     .then((result) => {
-      res.send({ Users: result }).json();
+      res.send({ message: 'All users found', Users: result }).json();
     })
     .catch((err) => {
       res.send({ message: err.message });
@@ -17,7 +17,7 @@ router.get("/user/:id", (req, res) => {
   const id = req.params.id;
   Users.findById(id)
     .then((result) => {
-      res.send({ User: result }).json();
+      res.send({ message: 'User found succesfully' ,data: result }).json();
     })
     .catch((err) => {
       res.status(400).send({ message: "User not found" });
@@ -64,7 +64,7 @@ router.put("/update/:id", (req, res) => {
           }
         })
         .catch((err) => {
-          res.status(404).send({ message: "User not updated" });
+          res.status(404).send({ message: "Unable to update user" });
         });
     })
     .catch((err) => {
