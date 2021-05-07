@@ -8,27 +8,26 @@ Run `nodemon server` for a dev server. Navigate to `http://localhost:3000/`. The
 
 ## To test the app using heroku link on postman
 
-### Create: `https://zuri-project.herokuapp.com/create`
+### Base url: `https://zuri-project.herokuapp.com/create`
 
-#### Payload is 
-`{ "message" : "string here",
-		data":{ 
+1. Create - `/create`
+	payload
+		`{
+			"name" : "string here",
+			"email" :"string here",
+			"country": "string here"
+		}`
+
+2. Read
+	* findAll - `/users`
+	* FindOne - `/user/_id`
+
+3. Update - `/update/_id`
+	payload (N:B You can upload one or all keys)
+		`{ 
             "name" : "string here",
 			"email" :"string here",
 			"country": "string here"
-	    }
-}`
+		}`
 
-### GET: `https://zuri-project.herokuapp.com/`
-
-### Update: `https://zuri-project.herokuapp.com/update/_id`
-#### Payload is 
-`{
-	data":{ 
-        "name" : "string here",
-		"email" :"string here",
-		"country": "string here"
-	}
-}`
-
-### Delete: `https://zuri-project.herokuapp.com/delete/_id`
+4. Delete - `/delete/_id`
