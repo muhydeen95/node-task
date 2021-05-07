@@ -8,10 +8,10 @@ Run `nodemon server` for a dev server. Navigate to `http://localhost:3000/`. The
 
 ## To test the app using heroku link on postman
 
-### Base url: `https://zuri-project.herokuapp.com/create`
+### Base url: `https://zuri-project.herokuapp.com/`
 
-1. Create - `/create`
-	payload
+1. Create - `/create`  
+	payload  
 		`{
 			"name" : "string here",
 			"email" :"string here",
