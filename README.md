@@ -11,11 +11,11 @@ Run `nodemon server` for a dev server. Navigate to `http://localhost:3000/`. The
 ### Base url: `https://zuri-project.herokuapp.com/`
 
 1. Create - `/create`  
-	payload  
-		`{
-			"name" : "string here",
-			"email" :"string here",
-			"country": "string here"
+	* payload  
+		`{  
+			"name" : "string here",  
+			"email" :"string here",  
+			"country": "string here"  
 		}`
 
 2. Read
@@ -23,11 +23,11 @@ Run `nodemon server` for a dev server. Navigate to `http://localhost:3000/`. The
 	* FindOne - `/user/_id`
 
 3. Update - `/update/_id`
-	payload (N:B You can upload one or all keys)
-		`{ 
-            "name" : "string here",
-			"email" :"string here",
-			"country": "string here"
+	* payload (N:B You can upload one or all keys)
+		`{   
+            "name" : "string here",  
+			"email" :"string here",  
+			"country": "string here"  
 		}`
 
 4. Delete - `/delete/_id`
